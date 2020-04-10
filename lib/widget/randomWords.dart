@@ -1,6 +1,6 @@
 import 'dart:convert' show json;
 
-import 'package:book_list/model/photo.dart';
+import 'package:dogshare/model/photo.dart';
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 import 'package:http/http.dart' as http;

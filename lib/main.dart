@@ -1,9 +1,9 @@
 
-import 'package:book_list/routes.dart';
-import 'package:book_list/ui/counter.dart';
-import 'package:book_list/ui/homePage.dart';
-import 'package:book_list/ui/profilePage.dart';
-import 'package:book_list/ui/profilePageTwo.dart';
+import 'package:dogshare/routes.dart';
+import 'package:dogshare/ui/counter.dart';
+import 'package:dogshare/ui/homePage.dart';
+import 'package:dogshare/ui/profilePage.dart';
+import 'package:dogshare/ui/profilePageTwo.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());

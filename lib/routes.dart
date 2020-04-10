@@ -1,5 +1,6 @@
-import 'package:book_list/ui/homePage.dart';
-import 'package:book_list/ui/profilePage.dart';
+
+import 'package:dogshare/ui/homePage.dart';
+import 'package:dogshare/ui/profilePage.dart';
 import 'package:flutter/material.dart';
 
 class Routes extends StatefulWidget {
