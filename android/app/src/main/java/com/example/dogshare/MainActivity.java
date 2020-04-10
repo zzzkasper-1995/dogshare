@@ -1,6 +1,9 @@
 package com.example.dogshare;
 
 import androidx.annotation.NonNull;
+
+import com.vk.api.sdk.VK;
+
 import io.flutter.embedding.android.FlutterActivity;
 import io.flutter.embedding.engine.FlutterEngine;
 import io.flutter.plugins.GeneratedPluginRegistrant;
@@ -26,6 +29,7 @@ public class MainActivity extends FlutterActivity {
   }
 
   private String vkSignIn() {
+          VK.login(this);
           return "vkSignIn success";
   }
 }
