@@ -2,15 +2,31 @@
 import 'package:dogshare/ui/homePage.dart';
 import 'package:dogshare/ui/profilePage.dart';
 import 'package:flutter/material.dart';
+import 'package:dogshare/ui/counter.dart';
 
-class Routes extends StatefulWidget {
-  Routes({Key key}) : super(key: key);
-
+class Routes extends StatelessWidget {
   @override
-  RoutesState createState() => RoutesState();
+  Widget build(BuildContext context) {
+
+    return MaterialApp(
+      routes: <String, WidgetBuilder>{
+        "/HomePage": (BuildContext context) => HomePage(),
+        "/ProfilePage": (BuildContext context) => new ProfilePage(),
+        "/Counter": (BuildContext context) => new Counter(),
+      },
+      home: BottomBar(),
+    );
+  }
 }
 
-class RoutesState extends State<Routes> {
+class BottomBar extends StatefulWidget {
+  BottomBar({Key key}) : super(key: key);
+
+  @override
+  BottomBarState createState() => BottomBarState();
+}
+
+class BottomBarState extends State<BottomBar> {
   int _selectedIndex = 0;
   static List<Widget> _widgetOptions = <Widget>[
     HomePage(),
