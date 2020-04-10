@@ -1,3 +1,4 @@
+import 'package:dogshare/services/vkAuth.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -19,12 +20,13 @@ class ProfilePage extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 16.0),
                 child: new FlatButton.icon(
                   onPressed: () {
-                    Navigator.of(context).pushNamed("/Counter");
+                    // Navigator.of(context).pushNamed("/Counter");
+                    VkAuth.signIn();
                   },
                   color: Colors.red,
                   textColor: Colors.white,
                   icon: const Icon(Icons.navigate_next, size: 18.0),
-                  label: const Text('Go To Counter'),
+                  label: const Text('SignIn'),
                 ),
               ),
             ],
