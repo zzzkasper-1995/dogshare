@@ -1,4 +1,4 @@
-import 'package:dogshare/services/vkAuth.dart';
+import 'package:dogshare/services/vkApi.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -29,6 +29,26 @@ class ProfilePage extends StatelessWidget {
                   label: const Text('SignIn'),
                 ),
               ),
+              new FlatButton.icon(
+                  onPressed: () {
+                    // Navigator.of(context).pushNamed("/Counter");
+                    VkAuth.vkGetUsers();
+                  },
+                  color: Colors.red,
+                  textColor: Colors.white,
+                  icon: const Icon(Icons.navigate_next, size: 18.0),
+                  label: const Text('vkGetUsers'),
+                ),
+                new FlatButton.icon(
+                  onPressed: () {
+                    // Navigator.of(context).pushNamed("/Counter");
+                    VkAuth.vkGetProfile();
+                  },
+                  color: Colors.red,
+                  textColor: Colors.white,
+                  icon: const Icon(Icons.navigate_next, size: 18.0),
+                  label: const Text('vkGetProfile'),
+                ),
             ],
           ),
         ),
